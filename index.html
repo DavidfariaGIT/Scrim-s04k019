@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div id="left">
+                <h3>HOME</h3>
+                <div class="score-box" id="left-box">
+                     <p class="score-number" id="score-one">0</p>  
+                </div> 
+                <div class="add-score-container" id="left-btns">
+                    <button class="btn-style" onclick="addOne()">+1</button>
+                    <button class="btn-style" onclick="addTwo()">+2</button>
+                    <button class="btn-style" onclick="addThree()">+3</button>
+                </div>
+            </div>
+            <div id="right">
+                <h3>GUEST</h3>
+                <div class="score-box" id="right-box">
+                    <p class="score-number" id="score-two">0</p>
+                </div> 
+                <div class="add-score-container" id="right-btns">
+                    <button class="btn-style" onclick="addOneRight()">+1</button>
+                    <button class="btn-style" onclick="addTwoRight()">+2</button>
+                    <button class="btn-style" onclick="addThreeRight()">+3</button>
+                </div>
+            </div>
+        </div>
+        
+        <div id="new-game-container">
+            <button id="reset-game" onclick="reset()">New Game</button>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>
